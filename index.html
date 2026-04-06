@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aakash Prajapati | SEO Portfolio</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body{margin:0;font-family:Poppins;background:#0f172a;color:#fff}
+section{padding:60px 10%}
+h1,h2{margin-bottom:20px}
+
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:48px}
+.hero span{color:#38bdf8}
+
+.btn{background:#38bdf8;color:#000;padding:10px 20px;border:none;border-radius:5px;cursor:pointer}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+
+.card{background:#1e293b;padding:20px;border-radius:10px;transition:0.4s}
+.card:hover{transform:translateY(-8px);box-shadow:0 10px 30px rgba(0,0,0,0.5)}
+
+.skills span{display:inline-block;background:#38bdf8;color:#000;padding:8px 12px;margin:5px;border-radius:5px}
+
+.fade{opacity:0;transform:translateY(40px);transition:0.8s}
+.show{opacity:1;transform:translateY(0)}
+
+footer{text-align:center;padding:20px;background:#020617}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero fade">
+<h1>Hi, I'm <span>Aakash Prajapati</span></h1>
+<p>SEO Specialist | Driving Organic Growth 🚀</p>
+<br>
+<button class="btn">Contact Me</button>
+</section>
+
+<!-- ABOUT -->
+<section class="fade">
+<h2>About Me</h2>
+<p>I am a Digital Marketing professional specializing in SEO (On-page, Off-page & Technical). Currently working at Giggle and Bytes Pvt Ltd on LetsDiskuss.com where I focus on organic growth, keyword ranking and technical optimization.</p>
+</section>
+
+<!-- SKILLS -->
+<section class="fade">
+<h2>Skills</h2>
+<div class="skills">
+<span>SEO</span>
+<span>Google Analytics</span>
+<span>Search Console</span>
+<span>Social Media Marketing</span>
+<span>Email Marketing</span>
+<span>WordPress</span>
+<span>HTML CSS JS</span>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="fade">
+<h2>Experience</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Giggle and Bytes Pvt Ltd</h3>
+<p>Current</p>
+<p>Working on LetsDiskuss.com – SEO Growth, Traffic Scaling & Ranking Improvements</p>
+</div>
+
+<div class="card">
+<h3>AKVM Solutions Pvt Ltd</h3>
+<p>1 Year</p>
+<p>Handled multiple SEO projects including Akvmrealty, Topairlinerules, Carhelpcenter</p>
+</div>
+
+<div class="card">
+<h3>Propshop</h3>
+<p>4 Months</p>
+<p>SEO optimization for propshop.org.in</p>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section class="fade">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card">LetsDiskuss.com</div>
+<div class="card">Policyian.com</div>
+<div class="card">Homeimprovementxpertz.com</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="fade">
+<h2>Contact</h2>
+<p>Email: akku22331@gmail.com</p>
+<p>Phone: 9540964112</p>
+</section>
+
+<footer>
+<p>© 2026 Aakash Prajapati</p>
+</footer>
+
+<script>
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+});
+
+document.querySelectorAll('.fade').forEach(el=>{
+observer.observe(el);
+});
+</script>
+
+</body>
+</html>
